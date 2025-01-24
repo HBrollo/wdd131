@@ -1,0 +1,28 @@
+body{
+    display: grid;
+    grid-template:auto 1fr auto / auto 1fr auto;}
+
+header {
+    padding: 2rem;
+    grid-column: 1/4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+aside{
+    grid-column: 3/4;
+}
+
+footer{
+    padding: 2rem;
+    grid-column: 2/3;
+}
