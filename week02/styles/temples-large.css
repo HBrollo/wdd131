@@ -1,0 +1,56 @@
+header {
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    justify-content: flex-end;
+    flex-direction: row;
+}
+nav a {
+    flex: 1 1 100%;
+
+    padding: 20px;
+    background-color: grey;
+}
+
+footer
+{
+    background-color: royalblue;
+}
+
+footer p {
+    display:flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 500px)
+{
+    .images { 
+        max-width: 1000px;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    main h1
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       list-style: none;
+       background-color: #333;
+       color: #fff;
+       flex-direction: row;
+    }
+
+    #menu{
+        display:none;
+    }
+}
