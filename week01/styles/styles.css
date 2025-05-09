@@ -1,0 +1,44 @@
+header
+{
+    color:white;
+    background-color: rgb(43, 41, 41);
+}
+
+header h1
+{
+    height: 100px;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    background-color: black;
+    height: 50px;
+}
+
+p
+{
+    font-size: larger;
+}
+
+.center
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 450px;
+
+}
+main
+{
+    background-color: grey;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(43, 41, 41);
+    height: 150px;
+}
