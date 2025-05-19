@@ -1,0 +1,84 @@
+/*Header colors and style*/
+header
+{
+    color:white;
+    background-color: #3C0A64;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+/*make the header work in mobile mode*/
+.headline
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a
+{
+    display:none;
+}
+.show a
+{
+    display:block;
+    display:grid;
+    justify-content: center;
+    font-size: x-large;
+}
+nav a:hover
+{
+    text-decoration: underline double;
+    color: #3C0A64;
+    background-color: white;
+}
+
+
+/*Hamburguer menu*/
+#menu
+{
+    display:block;
+    color:white;
+    font-size:xx-large;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+#menu::before {
+	content: "≡";
+}
+#menu.show::before {
+	content: "X";
+}
+
+/*Temple picture styling*/
+main { 
+    max-width: 800px;
+    margin: 0 auto;
+}
+main h1
+{
+    display: grid;
+    place-items: center;
+}
+
+.pictures
+{   
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+/*Footer*/
+footer
+{
+    color:white;
+    background-color: #3C0A64;
+}
+footer p
+{
+    display: flex;
+    justify-content: center;
+}

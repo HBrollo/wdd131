@@ -1,0 +1,28 @@
+@media screen and (min-width:750px){
+    header
+    {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .pictures
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav {
+        display: flex; 
+        gap: 50px; 
+        font-size:x-large;
+    
+    }
+    nav a
+    {
+        display:block;
+    }
+    #menu
+    {
+        display: none;
+    }
+}
