@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Brollo">
+    <meta name="Description" content="A Country Page">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Brazil's national animal, the Jaguar">
+            </picture>
+        </div>
+        <div class="data">
+            <ul>
+                <h2>Data</h2>
+                <li>Area: 8.5 Million km2</li>
+                <li>Population: 211.1 Million</li>
+                <li>Capital: Brasilia</li>
+                <li>Languages: Portuguese</li>
+                <li>Currency: Brazilian Real</li>
+                <li>Time Zone: UTC-3</li>
+                <li>Calling Code: +55</li>
+                <li>Internet TLD: .com.br</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <ul>
+                <h2>Weather <img src="images/weather.svg" alt ="Weather Icon"></h2>
+                <li>Temperature: <span id="Temperature"></span></li>
+                <li>Conditions: Cloudy</li>
+                <li>Wind: <span id="windSpeed"></span></li>
+                <li>Wind Chill: <span id="windChill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>Helaman Brollo
+            Brazil
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>
