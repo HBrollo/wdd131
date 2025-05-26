@@ -31,6 +31,10 @@ header
     border-bottom: solid 10px yellow;
 
 }
+.table-header
+{
+    list-style-type: none;
+}
 
 .weather
 {
