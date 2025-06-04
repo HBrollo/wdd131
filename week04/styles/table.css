@@ -1,0 +1,42 @@
+table
+{
+    font-size: xx-large;
+    border: solid 1px black;
+    margin: 10px auto;
+    box-shadow: 0 0 10px;
+    border-collapse: collapse;
+
+}
+thead
+{
+    background-color: black;
+    color: white;
+    tr:nth-last-child(1) {
+      background-color: #333;
+      
+    }
+}
+th, td
+{
+    border: solid 1px black;
+}
+
+tbody tr:nth-child(even)
+{
+    background-color: #eee;
+    
+}
+
+caption
+{
+    caption-side: bottom;
+    font-size: medium;
+}
+tbody td
+{
+    text-align: center;
+}
+.blank
+{
+    background-color: black;
+}
