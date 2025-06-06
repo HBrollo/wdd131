@@ -1,0 +1,16 @@
+@media screen and (min-width:750px)
+{
+    .star
+    {
+        margin-right: 48em;
+
+    }
+    
+}
+@media screen and (min-width:1500px)
+{
+    .star
+    {
+        margin-right: 88em;
+    }
+}

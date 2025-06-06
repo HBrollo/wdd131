@@ -1,0 +1,104 @@
+/*Header*/
+header
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #2D032B;
+}
+/*The whole Form*/
+form
+{
+    background-color: #D5CDD5;
+    border-radius: 6px;
+    padding-top: 0.5em;
+
+}
+fieldset
+{
+    margin-top: 1em;
+    border: 0px;
+    
+}
+/*Add blue optional word*/
+.optional:after
+{
+    content: "(Optional)";
+    color:#61065c;
+}
+/*Styling for individual data types*/
+select,
+input[type=submit]
+{
+    height: 44px;
+    width:100%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+.star
+{
+    display: flex;
+    justify-content: space-between;
+}
+.star label
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.checkbox
+{
+    display: block;
+}
+.checkbox input[type=checkbox]
+{
+    margin-right: 7px;
+}
+
+
+input[type=textarea]
+{
+    height: 88px;
+    width: 97.75%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+input[type=date],
+input[type=text]
+{
+    height: 44px;
+    width:97.75%;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+input:required,
+select:required
+{
+    border-bottom: solid 8px red;
+}
+input:required:valid,
+select:required:valid
+{
+    border-bottom: solid 8px green;
+}
+input[type=submit]
+{
+    font-size: larger;
+    margin-bottom: 0.5em;
+}
+/*Footer*/
+footer
+{
+    background-color: #2D032B;
+    padding-top: 1em;
+    padding-bottom:0.5em;
+}
+footer p
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -.05em;
+}
