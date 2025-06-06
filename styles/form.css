@@ -6,6 +6,17 @@ header
     color: white;
     background-color: #2D032B;
 }
+/*Font for legends*/
+legend,
+.textArea
+{
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;  
+}
 /*The whole Form*/
 form
 {
@@ -56,9 +67,9 @@ input[type=submit]
     margin-right: 7px;
 }
 
-
-input[type=textarea]
+textarea
 {
+    display: block;
     height: 88px;
     width: 97.75%;
     max-width: 400px;
