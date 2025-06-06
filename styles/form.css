@@ -6,9 +6,8 @@ header
     color: white;
     background-color: #2D032B;
 }
-/*Font for legends*/
-legend,
-.textArea
+/*Font for labels*/
+label
 {
    font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -30,6 +29,10 @@ fieldset
     margin-top: 1em;
     border: 0px;
     
+}
+label
+{
+    display: block;
 }
 /*Add blue optional word*/
 .optional:after
@@ -61,10 +64,12 @@ input[type=submit]
 .checkbox
 {
     display: block;
+    font-size: larger;
 }
 .checkbox input[type=checkbox]
 {
     margin-right: 7px;
+    margin-top: 7px;
 }
 
 textarea

@@ -3,7 +3,7 @@ document.getElementById('currentyear').textContent = currentyear;
 
 document.getElementById('lastmodified').textContent = document.lastModified;
 
-const productSelect = document.getElementById('product');
+const productSelect = document.getElementById('productSelect');
 
 const products = [
   {
@@ -36,6 +36,7 @@ const products = [
 function CreateSelectList()
 {
     products.forEach(product => {
+        
         const option = document.createElement('option');
         option.value = product.id;
         option.textContent = product.name;

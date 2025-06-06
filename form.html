@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Helaman Brollo">
-    <meta name="Description" content="A website showcasing a form. Contains inputs of text, radio, checkboxes, date and textarea. Upon hitting the submit button, redirects to a review.html file that counts the number of visits in localStorage.">
+    <meta name="Description" content="A simple and interactive form for users to submit feedback, preferences, or installation details. Includes text, date, checkbox, and radio input fields. Review your submission on the confirmation page.">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/forms.js" defer></script>
@@ -20,10 +20,11 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <legend>Product Name</legend>
-                <select id="product" name="product" required>
-                    <option value="">Select a Product...</option>
+                <label for="productSelect">Choose a product</label>
+                <select id="productSelect" required>
+                    <option value="" >Select a product...</option>
                 </select>
+                
             </fieldset>
             <fieldset class = "star">
                 <legend>Overall Rating</legend>
@@ -34,8 +35,8 @@
                 <label><input type="radio" name="rating" id="5star" value="5star" required>&star;&star;&star;&star;&star;</label>
             </fieldset>
             <fieldset>
-                <legend>Date of Installation</legend>
-                <label><input type="date" id="installDate" name = "installDate" required></label>
+                <label for="installDate">Select installation date:</label>
+                <input type="date" id="installDate" name = "installDate" required>
             </fieldset>
             <fieldset>
                 <legend>Useful Features</legend>
@@ -45,13 +46,13 @@
                 <label class="checkbox"><input type="checkbox" id="design" name="design">Design</label>
             </fieldset>
             <fieldset>
-                <label class="textArea" for="writtenReview">Write a Review:</label>
+                <label class="optional" for="writtenReview">Write a Review </label>
                 <textarea id="writtenReview" name="writtenReview">
             </textarea>
             </fieldset>
             <fieldset>
-                <legend class="optional">User Name </legend>
-                <label><input type="text" id="name" name="name"></label>
+                <label for="name" class="optional">User Name </label>
+                <input type="text" id="name" name="name">
             </fieldset>
             <fieldset>
                 <label><input type="submit" value="Post Review"></label>
