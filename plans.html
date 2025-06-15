@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Brollo">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <title>Returned Home Planner</title>
+</head>
+<body>
+    <header>
+        <h1>Returned Home Planner</h1>
+        <nav>
+            <a href="project.html">Home</a>
+            <a href="goals.html">Goals</a>
+            <a href="plans.html">Plans</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Plan out your day:</h2>
+       <form id="plan-form">
+            <fieldset>
+                <label for="plan">What kind of activity are you going to be doing?</label>
+                <input type="text" id="plan" name="plan" required>
+            </fieldset>
+            <fieldset>
+                <div class="time-input">
+                    <label for="time-start">When will you start this activity?</label>
+                    <input type="time" id="time-start" name="time-start" required>
+                </div>
+                <div class="time-input">
+                    <label for="time-end">When will you end this activity?</label>
+                    <input type="time" id="time-end" name="time-end" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="activity-type">What kind of activity is it?</label>
+                <select id="activity-type" required>
+                    <option value="">Select an activity...</option>
+                    <option value="exercise">Exercise</option>
+                    <option value="meal">Meal</option>
+                    <option value="study">Study</option>
+                    <option value="work">Work</option>
+                    <option value="fun">Fun</option>
+                    <option value="travel">Travel</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label><input type="submit" value="Make Plan"></label>
+            </fieldset>
+        </form>
+        <table id="schedule-table" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Type</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="schedule-body"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>Helaman Brollo
+            Brazil
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>

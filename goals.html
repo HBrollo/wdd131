@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Brollo">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <title>Returned Home Planner</title>
+</head>
+<body>
+    <header>
+        <h1>Returned Home Planner</h1>
+        <nav>
+            <a href="project.html">Home</a>
+            <a href="goals.html">Goals</a>
+            <a href="plans.html">Plans</a>
+        </nav>
+    </header>
+    <main>
+        <h2>You can set up to six goals:</h2>
+        <form id="goalForm">
+            <fieldset>
+                <label for="goal">Goal Name:</label>
+                <input type="text" id="goal" name="goal" required>
+            </fieldset>
+            <fieldset>
+                <label for="counter">How many times it order to accomplish this goal?</label>
+                <select id="counter" required>
+                    <option value="">Select an option...</option>
+                    <option value="1">1 Time</option>
+                    <option value="2">2 Times</option>
+                    <option value="3">3 Times</option>
+                    <option value="4">4 Times</option>
+                    <option value="5">5 Times</option>
+                    <option value="6">6 Times</option>
+                    <option value="7">7 Times</option>
+                    <option value="8">8 Times</option>
+                    <option value="9">9 Times</option>
+                    <option value="10">10 Times</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label><input type="submit" value="Set Goal"></label>
+            </fieldset>
+        </form>
+        <div class="goal-list">
+            <!--Input list goes here eventually-->
+            
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>Helaman Brollo
+            Brazil
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Brollo">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <title>Returned Home Planner</title>
+</head>
+<body>
+    <header>
+        <h1>Returned Home Planner</h1>
+        <nav>
+            <a href="project.html">Home</a>
+            <a href="goals.html">Goals</a>
+            <a href="plans.html">Plans</a>
+        </nav>
+    </header>
+    <main>
+    <h2>Goals</h2>
+    <div class="quote">
+        <img src="images/thomas-s-monson.webp" alt="Thomas S Monson" loading="lazy">
+        <p>“When performance is measured, performance improves. When performance is measured and reported, the rate of improvement accelerates” -President Thomas S. Monson</p>
+    </div>
+    <p class="no-goals-message">You haven’t set any goals yet. To set some, just click on "Goals."</p>
+    <div class="goal-list">
+        
+        <!-- JS will load goals here -->
+    </div>
+
+    <h2>Plans</h2>
+    <div class="quote">
+        <img src="images/DandC.webp" alt="Doctrine and Covenants" loading="lazy">
+        <p>Verily I say, men should be anxiously engaged in a good cause, and do many things of their own free will, and bring to pass much righteousness. -D&C 58:27 </p>
+    </div>
+    <p class="no-plans-message">You haven’t scheduled any plans yet. To set some, just click on "Plans"</p>
+    <table id="schedule-table" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Type</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+    </table>
+</main>
+    <footer>
+        <p>
+            ©<span id="currentyear"></span>Helaman Brollo
+            Brazil
+        </p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>

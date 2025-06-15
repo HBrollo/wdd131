@@ -1,0 +1,194 @@
+/*Header items*/
+header
+{
+    background-color: rgb(82, 152, 195);
+    margin-top: -1em;
+    padding-top: 0.5em;
+    font-family: 'Roboto', sans-serif;
+}
+header h1
+{
+    display: flex;
+    justify-content: center; 
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: #777;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav a:link,
+nav a:visited
+{
+    color:rgb(0, 38, 255);
+    text-decoration: none;
+    font-size: larger;
+}
+nav a:hover
+{
+    color:#eee;
+}
+/*Main items*/
+main
+{
+    font-family: 'Lato', sans-serif;
+}
+main h1,
+main h2
+{
+    display: flex;
+    justify-content: center;
+}
+.no-goals-message,
+.no-plans-message {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Forms*/
+label
+{
+    font-size: larger;
+}
+input,
+select
+{
+    display:block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height:44px;
+    width: 100%;
+    max-width: 400px;
+    font-size: larger;
+    border-radius: 6px;
+}
+input:required,
+select:required
+{
+    border-bottom: solid 8px red;
+}
+input:required:valid,
+select:required:valid
+{
+    border-bottom: solid 8px green;
+}
+/*Goal grid*/
+.quote img
+{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+.quote p
+{
+    margin-left: 1em;
+}
+/*Make the images work in both mobile and large screens*/
+@media screen and (min-width:750px)
+{
+    .quote img
+    {
+        width: 10%;
+        border-radius: 8px;
+    }
+    .quote
+    {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        font-size: large;
+    }
+}
+
+.goal-list
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    
+}
+.goal-item
+{
+    background-color: #ccc;
+    border: solid 2px #777;
+    border-radius: 6px;
+    text-align: center;
+}
+.goal-item h3
+{
+    color:rgb(0, 38, 255);
+}
+/*Plan table*/
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 50%;
+    border: solid 1px #777;
+}
+thead
+{
+    background-color: #ccc;
+    
+}
+th,
+td
+{
+    border: solid 1px;
+}
+.delete-btn
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Styling for different types of activities*/
+.other
+{
+    background-color: #ecd1ee;
+}
+.exercise
+{
+    background-color: rgb(168, 219, 168);
+}
+.study
+{
+    background-color: rgb(183, 183, 251);
+}
+.work
+{
+    background-color: rgb(228, 185, 185);
+}
+.fun
+{
+    background-color: #eadeab;
+}
+.meal
+{
+    background-color: #bce6e7;
+}
+.travel
+{
+    background-color: #ccc;
+}
+/*Footer items*/
+footer
+{
+    background-color: rgb(82, 152, 195);
+}
+footer p
+{
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
